@@ -1,3 +1,8 @@
+<?php
+    if(!isset($_SESSION['admin_name'])){
+        header("location:".BURLA.'login.php');
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>

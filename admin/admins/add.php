@@ -16,7 +16,11 @@
 
         if (checkEmpty($name) and checkEmpty($email) and checkEmpty($password)){
             if(validEmail($email)){
-                $newPassword = password_hash($password,PASSWORD_DEFAULT);
+                $hashPassword = password_hash($password,PASSWORD_DEFAULT);
+                $sql = "INSERT INTO admins (`admin_name`,`admin_email`,`admin_password`)
+                            VALUES ('$name','$email','$hashPassword') ";
+                            $success_message = db_insert($sql);
+
             }
             else{
                 $error_message= "Please Correct Email";
