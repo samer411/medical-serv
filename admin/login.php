@@ -1,7 +1,10 @@
 <?php require_once '../config.php';?>
+<?php
+    if(isset($_SESSION['admin_name'])){
+        header("location:".BURLA.'index.php');
+    }
+?>
 <?php require BL.'functions/validation.php';?>
-<?php require BL.'functions/db.php'?>
-
 
 <!doctype html>
 <html lang="en">
@@ -31,7 +34,18 @@
         if(checkEmpty($email)&& checkEmpty($password)){
             if(validEmail($email)){
                 $check = getRow('admins','admin_email',$email);
-                var_dump($check);
+                $check_password = password_verify($password,$check['admin_password']);
+
+                if($check_password){
+                    $_SESSION['admin_name'] = $check['admin_name'];
+                    $_SESSION['admin_email'] = $check['admin_email'];
+                    $_SESSION['admin_id'] = $check['admin_id'];
+
+                    header("location:".BURLA."index.php");
+                }
+                else{
+                    $error_message = "Data Not Correct";
+                }
             }
             else{
             $error_message="Please Type Correct Email ";

@@ -15,7 +15,12 @@ function validEmail($email){
     return true;
 }
 
-
+function checkLess($value,$min){
+    if(strlen(trim($value))<=$min){
+        return false;
+    }
+    return true;
+}
 
 
 ?>

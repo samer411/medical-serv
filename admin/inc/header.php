@@ -37,8 +37,8 @@
                     Cities
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" ?>">Add</a>
-                        <a class="dropdown-item" ?>">View All</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/add.php' ?>">Add</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/index.php' ?>">View All</a>
                     </div>
                 </li>
 
@@ -77,7 +77,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link">Logout</a>
+                    <a class="nav-link" href="<?php echo BURLA.'logout.php'?>">Logout</a>
                 </li>
 
             </ul>
