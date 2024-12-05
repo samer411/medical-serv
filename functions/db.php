@@ -61,4 +61,13 @@
         }
         return $rows;
     }
+
+    function deleteRow($sql){
+        global $conn;
+        $result = mysqli_query($conn,$sql);
+        if($result){
+            return "Deleted Success";
+        }
+        return false;
+    }
 ?>
