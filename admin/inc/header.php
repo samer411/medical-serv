@@ -37,8 +37,8 @@
                     Cities
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="<?php echo BURLA.'cities/add.php' ?>">Add</a>
-                        <a class="dropdown-item" href="<?php echo BURLA.'cities/index.php' ?>">View All</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/add.php' ?>Add</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/index.php' ?>View All</a>
                     </div>
                 </li>
 
@@ -47,8 +47,8 @@
                     Services
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" ?>">Add</a>
-                        <a class="dropdown-item" ?>">View All</a>
+                        <a class="dropdown-item" ?>Add</a>
+                        <a class="dropdown-item" ?>View All</a>
                     </div>
                 </li>
 
@@ -57,7 +57,7 @@
                     Orders
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" ?>">View All</a>
+                    <a class="dropdown-item" ?>View All</a>
                     </div>
                 </li>
 
