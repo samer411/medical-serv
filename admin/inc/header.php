@@ -22,7 +22,6 @@
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" > <img  width="70" alt="LOGO"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,8 +36,8 @@
                     Cities
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="<?php echo BURLA.'cities/add.php' ?>Add</a>
-                        <a class="dropdown-item" href="<?php echo BURLA.'cities/index.php' ?>View All</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/add.php' ?>">Add</a>
+                        <a class="dropdown-item" href="<?php echo BURLA.'cities/index.php' ?>">View All</a>
                     </div>
                 </li>
 
